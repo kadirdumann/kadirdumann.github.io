@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Furkan Kadir - Bilgisayar Mühendisi</title>
+  <style>
+
+    .about {
+        font-family: 'Georgia', serif; /* Zarif ve okunaklı bir font */
+        font-size: 1.3rem; /* Normalden büyük yazı puntosu */
+        line-height: 1.8;  /* Satır aralığı */
+        text-align: justify; /* Paragrafı iki yana yasla */
+        text-indent: 40px;  /* İlk satırı girintili başlat */
+        padding: 20px;
+        background-color: #fdfdfd;
+        border-left: 5px solid #413d3d;
+        border-radius: 8px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 17px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 150px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #000000;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
+    .contact p {
+      text-align: center;
+      margin: 4px 0;
+      font-size: 1.1em;
+    }
+
+    .contact a {
+      color: #1d3557;
+      text-decoration: none;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background-color: #e0f0ff;
+      color: #1d3557;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .skill-category {
+      margin-top: 25px;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #000000;
+      border-left: 4px solid #413d3d;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        font-family: 'Roboto Slab', serif;
+        font-size: 1.rem;
+        color: #555;
+        text-align: center;
+        margin-top: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .experience-section {
+        margin-top: 40px;
+    }
+
+    .experience-section h2 {
+        font-size: 1.8rem;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+    }
+
+    .experience-entry {
+        margin-bottom: 30px;
+    }
+
+    .experience-entry strong {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .experience-details {
+        margin-top: 6px;
+        margin-left: 15px;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .experience-details p {
+        margin: 4px 0;
+    }
+
+    .egitim-tarih {
+      font-size: 0.9em;
+      font-style: italic;
+      color: gray;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .agno {
+      display: block;
+      font-size: 0.85em;
+      font-style: italic;
+      color: gray;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 15px; /* biraz içerden başlasın */
+    }
+
+    .staj-detay {
+      font-size: 0.85em;
+      font-style: italic;
+      color: gray;
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 8px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .proje {
+        margin-bottom: 30px;
+    }
+
+    .proje h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #2c3e50;
+    }
+
+    .tarih {
+        font-size: 15px;
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .proje-detay {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .proje-detay li {
+        margin-bottom: 6px;
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts (ekstra font için) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <img src="profil.jpg" alt="Profil Fotoğrafı">
+  <h1 class="name">Furkan Kadir Duman</h1>
+  <p class="subtitle">Bilgisayar Mühendisi &nbsp;|&nbsp; Gömülü Sistemler  &nbsp;|&nbsp; IoT & Akıllı Sistemler &nbsp;|&nbsp; Robotik Teknolojiler</p>
+
+  <div class="contact">
+    <p>📱 +90 507 477 01 11</p>
+    <p>📧 <a href="mailto:kadirrdumann14@gmail.com">kadirrdumann14@gmail.com</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/furkan-kadir-duman-780796229" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin" style="color:#0A66C2; margin-right:6px;"></i> LinkedIn
+      </a>
+    </p>
+    <p> 
+      <a href="https://github.com/kadirdumann" target="_blank" rel="noopener">
+        <i class="fab fa-github" style="color:#333; margin-right:6px;"></i> GitHub
+      </a>
+    </p>
+  </div>
+  
+
+  <section class="experience-section">
+    <h2>Hakkımda</h2>
+    <div class="about">
+     2000 yılında Sivas'ta doğdum. Bilgisayar mühendisiyim. Gömülü sistemler yazılım geliştirme ve sistem tasarımı konularında tecrübe sahibiyim. ARM programlama, kablosuz haberleşme sistemleri ve otonom sistemler üzerine çeşitli projelerde yer aldım ve deneyim kazandım.
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <h2>Yetenekler</h2>
+  
+    <h3 class="skill-category">Programlama Dilleri</h3>
+    <div class="skills">
+      <span class="skill">C</span>
+      <span class="skill">C++</span>
+    </div>
+  
+    <h3 class="skill-category">Kullandığım Kartlar</h3>
+    <div class="skills">
+      <span class="skill">STM32</span>
+      <span class="skill">Raspberry Pi</span>
+      <span class="skill">ESP32</span>
+      <span class="skill">Arduino</span>
+    </div>
+  
+    <h3 class="skill-category">Kablolu Haberleşme</h3>
+    <div class="skills">
+      <span class="skill">UART</span>
+      <span class="skill">SPI</span>
+      <span class="skill">I2C</span>
+      <span class="skill">CAN-BUS</span>
+      <span class="skill">RS232</span>
+      <span class="skill">RS485</span>
+    </div>
+  
+    <h3 class="skill-category">Kablosuz Haberleşme</h3>
+    <div class="skills">
+      <span class="skill">LoRa</span>
+      <span class="skill">Bluetooth</span>
+      <span class="skill">MQTT</span>
+    </div>
+  
+    <h3 class="skill-category">Kullandığım Teknolojiler</h3>
+    <div class="skills">
+      <span class="skill">FreeRTOS</span>
+      <span class="skill">Yocto</span>
+      <span class="skill">Qt Framework</span>
+      <span class="skill">IMU</span>
+      <span class="skill">GPS</span>
+      <span class="skill">LIDAR</span>
+    </div>
+  </section>
+  
+
+  <section class="experience-section">
+    <h2>Deneyim</h2>
+  
+    <div class="experience-entry">
+      <strong>EEC Elektronik</strong><span class="staj-detay">– Staj</span>
+      <div class="experience-details">
+        <p>Kasım 2024 - Ocak 2025</p>
+        <p>• STM32F4 Discovery kartı ile projeler geliştirdim.</p>
+        <p>• Kablolu ve kablosuz haberleşme protokolleri üzerinde çalıştım.</p>
+        <p>• ADC ve DAC uygulamaları gerçekleştirdim.</p>
+        <p>• DMA yapılandırması ve kullanımı konusunda bilgi edindim.</p>
+        <p>• RTOS ile çoklu görev uygulamaları geliştirdim.</p>
+      </div>
+    </div>
+  
+    <div class="experience-entry">
+      <strong>NTT DATA Business Solutions</strong><span class="staj-detay">– Staj</span>
+      <div class="experience-details">
+        <p>Eylül 2024 - Ekim 2024</p>
+      </div>
+    </div>
+  </section>
+
+    <section class="experience-section">
+        <h2>Eğitim</h2>
+        <ul>
+            <li>
+            Muzaffer Bezircilioğlu Anadolu Lisesi – 
+            <span class="egitim-tarih">2019</span>
+            </li>
+            <li>
+            Sivas Cumhuriyet Üniversitesi, Bilgisayar Mühendisliği – 
+            <span class="egitim-tarih">2025</span><br>
+            <span class="agno">AGNO: 2.97/4.00</span>
+            </li>
+        </ul>
+    </section>
+      
+    <section class="experience-section">
+        <h2>Projeler</h2>
+      
+        <div class="experience-entry">
+          <strong>TEKNOFEST 2024</strong><span class="staj-detay">– Sanayide Dijital Teknolojiler</span>
+          <div class="experience-details">
+            <p>Ekim 2023 – Eylül 2024</p>
+            <p>• Finalist takım olarak yer aldık ve 4. olduk.</p>
+            <p>• Endüstri 4.0 ve otomasyon çözümleri üzerine projeler yürütmek.</p>
+            <p>• LoRa teknolojisini kullanarak Uzaktan Kontrol ve İzleme (CCS) sistemi geliştirmek.</p>
+            <p>• Yazılım ve donanım entegrasyonu ile optimize edilmiş sistemler oluşturmak.</p>
+            <p>• Otonom sistem araç geliştirme ve test süreçlerini yönetmek.</p>
+          </div>
+        </div>
+      
+        <div class="experience-entry">
+          <strong>42 YAZILIM OKULU</strong>
+          <div class="experience-details">
+            <p>Kasım 2021 – Ocak 2022</p>
+            <p>• Proje tabanlı öğrenme modeli ile yazılım geliştirme projelerinde görev almak.</p>
+            <p>• C ve C++ dillerinde ileri düzeyde projeler geliştirmek.</p>
+            <p>• Kendi kendine öğrenme becerilerini geliştirme yetisi kazanma.</p>
+          </div>
+        </div>
+    </section>
+      
+
+    <section class="experience-section">
+        <h2>Sertifikalar</h2>
+        <ul>
+            <li>IoT Teknolojileri Hackathon</li>
+            <li>C Programlama – Necati Ergin</li>
+        </ul>
+    </section>
+    
+
+</body>
+</html>
